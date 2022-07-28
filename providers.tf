@@ -6,6 +6,12 @@ terraform {
     }
   }
 }
+    backend "azurerm"{
+        resource_group_name ="cicdbackup"
+        storage_account_name= "cicdbackupterraform"
+        container_name = "backup"
+        key ="terraform.tfstate"
+    }
 provider "azurerm" {
   # Configuration options
   client_id = "ec9341f0-096a-4075-a187-6c7a468974b1"
