@@ -11,7 +11,7 @@ terraform {
         storage_account_name= "cicdbackupterraform"
         container_name = "backup"
         key ="terraform.tfstate"
-        aaccess_key = "0plSdLKTskBSSkfKj7YJTSRSjR+Y55PMoDIAbKskFXB+NCbAi+MACann4LMYqb6t85VxB69WBT1N+ASthXl0rA=="
+        access_key = "0plSdLKTskBSSkfKj7YJTSRSjR+Y55PMoDIAbKskFXB+NCbAi+MACann4LMYqb6t85VxB69WBT1N+ASthXl0rA=="
     }
 }
     
