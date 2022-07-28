@@ -1,3 +1,6 @@
+terraform {
+  backend "azurerm"{}
+}
 resource "azurerm_resource_group" "rg_gipush" {
   count               = length(var.rg_names)
   name                = var.rg_names[count.index]
