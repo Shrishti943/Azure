@@ -1,16 +1,17 @@
 terraform {
-  backend "azurerm"{
-        resource_group_name ="cicdbackup"
-        storage_account_name= "cicdbackupterraform"
-        container_name = "backup"
-        key ="terraform.tfstate"
-    }
+  
   required_providers {
     azurerm = {
       source = "hashicorp/azurerm"
       version = "3.9.0"
     }
   }
+  backend "azurerm"{
+        resource_group_name ="cicdbackup"
+        storage_account_name= "cicdbackupterraform"
+        container_name = "backup"
+        key ="terraform.tfstate"
+    }
 }
     
 provider "azurerm" {
